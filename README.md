@@ -1,4 +1,7 @@
-# Project Euler - Problem 46 - Goldbach's Other Conjecture
+# Project Euler
+
+## Problem 46 - Goldbach's Other Conjecture
+
 It was proposed by Christian Goldbach that every odd composite number can be written as the sum of a prime and twice a square.
 
      9 =  7 + 2 × 1^2
