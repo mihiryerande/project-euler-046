@@ -15,18 +15,19 @@
 #     What is the smallest odd composite that cannot be written as the sum of a prime and twice a square?
 
 from math import floor, sqrt
+from typing import Set
 
 
-def is_prime(x, primes):
+def is_prime(x: int, primes: Set[int]) -> bool:
     """
     Returns True iff `x` is a prime number.
 
     Args:
-        x (int): Natural number greater than 2
+        x      (int):      Natural number greater than 2
         primes (Set[int]): Set of all odd primes less than x
 
     Returns:
-         True iff `x` is a prime number
+         (bool): True iff `x` is a prime number
 
     Raises:
         AssertError: if incorrect args are given
@@ -37,13 +38,13 @@ def is_prime(x, primes):
     return True
 
 
-def main():
+def main() -> int:
     """
     Returns the smallest odd composite number that cannot be written as
       the sum of a prime and twice a square.
 
     Returns:
-        Smallest odd composite number not equalling the sum of a prime and twice a square
+        (int): Smallest odd composite number not equalling the sum of a prime and twice a square
     """
     # Accumulate the set of primes discovered while searching odd numbers.
     # Technically don't need to store 2, as only odd primes are needed here.
